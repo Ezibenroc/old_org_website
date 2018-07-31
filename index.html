@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="EN" xml:lang="EN">
 <head>
-<!-- 2018-07-20 Fri 10:42 -->
+<!-- 2018-07-31 Tue 09:34 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Tom Cornebize</title>
@@ -241,23 +241,6 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
-<script type="text/javascript">
-    function rpl(expr,a,b) {
-      var i=0
-      while (i!=-1) {
-         i=expr.indexOf(a,i);
-         if (i>=0) {
-            expr=expr.substring(0,i)+b+expr.substring(i+a.length);
-            i+=b.length;
-         }
-      }
-      return expr
-    }
-
-    function show_org_source(){
-       document.location.href = rpl(document.location.href,".html",".org");
-    }
-</script>
 </head>
 <body>
 <div id="content">
@@ -302,9 +285,6 @@ My office is at the 4th floor of the IMAG building:
 <iframe width="70%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=5.764992535114289%2C45.18910903065343%2C5.769297480583191%2C45.190876469209364&amp;layer=mapnik&amp;marker=45.1899927567919%2C5.76714500784874" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=45.18999&amp;mlon=5.76715#map=19/45.18999/5.76715">Display a larger map</a></small>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
-<div id="show_source"><input type="button" value="Show Org source" onClick='show_org_source()'></div>
 </div>
 </body>
 </html>
